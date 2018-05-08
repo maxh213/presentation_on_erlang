@@ -14,7 +14,7 @@
 getEvenNumbersFromList(List) ->
     getEvenNumbersFromList(List, []).
 
-getEvenNumbersFromList(_, evenNumberList) ->
+getEvenNumbersFromList([], evenNumberList) ->
     evenNumberList;
 
 getEvenNumbersFromList([ListItem|List], evenNumberList) when ListItem mod 2 == 0 ->
